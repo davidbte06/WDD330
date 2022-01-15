@@ -1,7 +1,13 @@
 const array = [{
-    label: 'Week 1 Notes',
-    link: 'week1/index.html'
-}];
+        label: 'Week 1 Notes',
+        link: 'week1/index.html'
+    },
+    {
+        label: 'Week 2 Notes',
+        link: 'week2/index.html'
+    }
+
+];
 
 let ol = document.querySelector('ol');
 
