@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Week 3</title>
+    <meta name="description" content="~Notes for week 3">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Week 3: Questions, Notes, Exercise</h1>
+    </head>
+
+    <main>
+        <h2>Questions</h2>
+        <ul>
+            <li>In javascript there are events of coordinates when we position our cursor in certain coordinates. When
+                is this tool used?</li>
+            <li>How to use events effectively?</li>
+        </ul>
+
+        <h2>Notes</h2>
+        <h3>Object Methods: this</h3>
+        <p>Objects: Are usually created to represent entities of the real world</p>
+        <p>We use (this) when we want to access the object. For instance:
+            let user = {
+            name: "Jhon",
+            age: 30,
+
+            sayHi() {
+            alert(this.name)
+            }
+            };
+
+            user.sayHi();
+        </p>
+        <p>We can use this in any function even if it's not a method of an object</p>
+        <li>Arrow functions get 'this' from outer context</li>
+
+        <h3>Chapter 5: Objects</h3>
+        <li>An object whose properties are declared textually in the code is called an object literal.</li>
+        <li>Objects can store methods inside them.</li>
+        <li>To access the properties of an object inside a method it is necessary to use the reserved word this by
+            variable scope.</li>
+
+        <p>The way we create an object: const spiderman {}</p>
+        <p>If we want to access the properties of an object we can use the dot notation For example: (superman.name)</p>
+        <p>We also can Computed Properties for example:</p>
+        <li>const hulk = { name: 'Hulk', ['catch' + 'Phrase']: 'Hulk Smash!' };</li>
+        <p>We can call methods, checking if properties or methods exist, find all the properties of an object, add
+            properties, change properties, remove properties</p>
+        <p>It’s even possible for an object to contain other objects. (Nasted Objects)</p>
+
+        <h3>Chapter 6: Document Object Model</h3>
+        <p>What is the DOM?</p>
+        <li>Means Document Object Model</li>
+        <li>Represent an HMTL document as a network of connected nodes that form a tree-like structure.</li>
+        <p>The DOM help us to access any element on a page</p>
+        <li>const body = document.body;</li>
+        <li>(SetAttribute) help us to change the value of an element</li>
+
+        <h3>Events</h3>
+        <p>An event in javascript is a user action upon which some process can be performed (for example, changing
+            the value of a form, or clicking on a link).</p>
+        <li>(addEventListener) is used to register an event to a specific object.</li>
+        <p>There are many types of events that can help us in different situations, from cursor coordinates, a click,
+            touch, etc.</p>
+    </main>
+</body>
+
+</html>
