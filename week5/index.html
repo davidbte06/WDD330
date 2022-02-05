@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Week 5</title>
+    <meta name="description" content="~Notes for week 5">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Week 5: Questions, Notes, Exercise</h1>
+    </head>
+
+    <main>
+        <h2>Questions</h2>
+        <ul>
+            <li>Why is it important to debug our code?</li>
+            <li>Is there an efficient or better way to debug?</li>
+        </ul>
+
+        <h2>Notes</h2>
+        <h3>Chapter 10: Testing and Debugging</h3>
+
+        <p>Debugging is a process of identifying and resolving bugs that may exist in our code. Many times we have found
+            ourselves in the situation of making a code of a project and when we test it we realize that it does not
+            work as we expected. So the next thing we do is to go to our code and look for the line that may be failing.
+            That process is considered as debugging. Find what the error is, why it fails, how it failed and if it is
+            affecting another part of the code.
+        </p>
+
+        <p>Errors are caused when something is not right in our program. Something a line or several lines may contain
+            some problem that we must solve to make our program work. We can find some errors caused by the following
+            reasons.</p>
+        <li>System error: Problems with the system or external devices with wich the program is interacting</li>
+        <li>Programmer error: The program contains incorrect syntax or fault logic</li>
+        <li>User error: the user has entered data incorrectly</li>
+        <li>Exceptions: this happens when an error produces a return value that can be used by the program to handle the
+            error</li>
+        <li>Make code fail gracefully but not completely silently, and so as to not affect user experience</li>
+        <p>Strict mode: produces more exceptions and warnings and prohibits the use of some deprecated features - throws
+            errors if sloppy code is used</p>
+        <li>We just need to add to the first line of a JavaScript file - 'use strict';</li>
+        <p>We can use Linting tools this helps us to highlight any sloppy programming practices or syntax errors, and
+            will complain if certain style convetions are not followed, such as how code is indented</p>
+        <li>We can add linting tool as a text-editor plugin</li>
+        <p>There are always new APIs being developed and many times browsers are not keeping up with this. The way we
+            can confirm browser support for these APIs is to use feture detection.</p>
+        <li>The way of doing this is by using an if statement to check whether an object or method exists before trying
+            to actually call the method</li>
+        <li>Modernizr and Can I use? are libraries to check which features are currently supported in different browsers
+        </li>
+
+        <p>An error can be created by the host environment when an exception occurs: const error = new Error ();</p>
+        <p>Seven error objects used for specific errors:</p>
+        <li>EvalError</li>
+        <li>RangeError</li>
+        <li>SyntaxError</li>
+        <li>TypeError</li>
+        <li>URIError</li>
+        <li>InternalError</li>
+
+        <p>We can also handle exceptions gracefully by catching the error: try, catch and finally</p>
+
+        <li>Jest is a TDD framework: help us to create and run tests by providing helper methods for common test assertions</li>
+
+    </main>
+
+</body>
+
+</html>
