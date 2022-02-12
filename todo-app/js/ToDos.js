@@ -35,22 +35,11 @@ class Todos {
         this.updateTasksLeft();
     }
 
-    /**
-     * completeTodo: changes the status of the task completion
-     *
-     * @param {string} id identifier for the task to mark as completed
-     */
     completeTodo(id) {
         toggleCompleted(this.lsKey, id);
         this.listTodos();
     }
 
-    /**
-     * deleteTodo: removes a task from the list
-     * calls the deleteTask function
-     *
-     * @param {string} id identifier for the task to be deleted
-     */
     deleteTodo(id) {
         deleteTask(this.lsKey, id);
         this.listTodos();
@@ -102,14 +91,6 @@ class Todos {
     }
 }
 
-/**
- * saveTodo: creates a new todo task, adds it to the list
- * and saves it to localStorage. The new task is added to
- * the beginning of the list
- *
- * @param {string} key           localStorage object key
- * @param {string} textContent   content of the task
- */
 function saveTodo(key, textContent) {
     let task = {
         id: Date.now(),
@@ -120,14 +101,6 @@ function saveTodo(key, textContent) {
     ls.write(key, todoList);
 }
 
-/**
- * changeTask: replaces an existing task with a new one
- * saves the new version of the list to localStorage.
- *
- * @param {string} key           localStorage object key
- * @param {string} id            identifier of the task
- * @param {object} todo          todo object to be inserted
- */
 function changeTask(key, id, todo) {
     let todoList = getTodos(key);
     if (todoList != null) {
@@ -138,13 +111,6 @@ function changeTask(key, id, todo) {
     return false;
 }
 
-/**
- * deleteTask: removes a task from the list, updates the
- * change to localStorage
- *
- * @param {string} key          localStorage object key
- * @param {string} id           identifier of the task
- */
 function deleteTask(key, id) {
     let todoList = getTodos(key);
     let index = todoList.findIndex(element => element.id == id);
@@ -156,11 +122,6 @@ function deleteTask(key, id) {
     return false;
 }
 
-/**
- * getTodos: returns a lists of todos from localStorage
- *
- * @param {string} key           localStorage object key
- */
 function getTodos(key) {
     if (todoList == null) {
         if (ls.read(key) == null)
@@ -171,13 +132,6 @@ function getTodos(key) {
     return todoList;
 }
 
-/**
- * renderTodoList: updates the elementDOM by appending
- * the formatted todo list.
- *
- * @param {array} list
- * @param {HTMLObject} elementDOM
- */
 
 function renderTodoList(list, elementDOM) {
     if (list !== null) {
@@ -205,12 +159,7 @@ function renderTodoList(list, elementDOM) {
     }
 }
 
-/**
- * toggleCompleted: toggles the value of the tasks
- *
- * @param {string} key           localStorage object key
- * @param {string} id            identifier of the task
- */
+
 function toggleCompleted(key, id) {
 
     let item = getTodos(key).find(element => element.id == id);
@@ -220,12 +169,7 @@ function toggleCompleted(key, id) {
     }
 }
 
-/**
- * filterList: filters the list based on the id of the
- * object with the activeFilter class
- *
- * @param {array} list          list of tasks to be filtered
- */
+
 function filterList(list) {
 
     let filter = utilities.qs(".activeFilter").id;
