@@ -20,7 +20,7 @@ const array = [{
     },
     {
         label: 'Todo App',
-        link: 'week6/index.html'
+        link: 'todo-app/index.html'
     }
 
 ];
