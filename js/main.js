@@ -17,6 +17,10 @@ const array = [{
     {
         label: 'Week 5 Notes',
         link: 'week5/index.html'
+    },
+    {
+        label: 'Todo App',
+        link: 'week6/index.html'
     }
 
 ];
