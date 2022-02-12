@@ -1,143 +1,162 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: #121f3d;
-    color: white;
-    min-height: 100vh;
 }
 
-header {
-    font-size: 2rem;
+
+#app {
+    min-width: 400px;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 30px;
+    background-color: #98ca3f;
 }
 
-header,
-form {
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-form input,
-form button {
-    padding: 0.5rem;
-    font-size: 2rem;
-    border: none;
-    background: white;
-}
-
-form button {
-    color: #E06666;
-    background: #f7fffe;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-form button:hover {
-    background: #E06666;
-    color: white;
-}
-
-.todo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.todo-list {
-    min-width: 30%;
-    list-style: none;
-}
-
-.todo {
-    margin: 0.5rem;
-    background: white;
-    font-size: 1.5rem;
+#maintitle {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    vertical-align: middle;
     color: black;
-    display: flex;
-    justify-content: space-between;
+}
+
+#maintitle * {
+    display: inline;
+}
+
+#maintitle img {
+    width: 1.25em;
+}
+
+#newTaskForm {
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    height: 42px;
+}
+
+#newTaskForm * {
+    margin: 0;
+    display: inline-block;
+}
+
+#newTask {
+    margin: 0px;
+    width: 78%;
+    height: 38px;
+    padding: 0 15px;
+    border: 1px solid gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#addButton {
+    font-size: 35px;
+    height: 40px;
+    margin: 0 5px;
+    padding: auto auto;
+    background-color: var(--main-color);
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid gray;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    text-align: center;
+}
+
+#addButton.active {
+    outline: none;
+}
+
+#taskBoard {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px auto 0px auto;
+    width: 80%;
+}
+
+#taskBoard .task {
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+    color: rgb(95, 95, 95);
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 88% auto;
     align-items: center;
-    transition: all 1s ease;
 }
 
-.filter-todo {
-    padding: 1rem;
+#taskBoard .task * {
+    vertical-align: middle;
+    display: inline-block;
 }
 
-.todo li {
-    flex: 1;
+.task-cb {
+    height: 25px;
+    width: 25px;
+    margin: 0;
+    padding: 0;
+
 }
 
-.trash-btn,
-.complete-btn {
-    background: #E06666;
-    color: white;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 1rem;
+.task-text {
+    font-size: 20px;
+    padding: 0px 10px;
 }
 
-.complete-btn {
-    background: green;
+.task-delete {
+    font-size: 40%;
 }
 
-.todo-item {
-    padding: 0rem 0.5rem;
+.task-delete:hover {
+    color: red;
 }
 
-.fa-trash,
-.fa-check {
-    pointer-events: none;
+.task-delete:active {
+    color: orange;
+    font-size: 100%;
 }
 
-.fall {
-    transform: translateY(10rem) rotateZ(20deg);
-    opacity: 0;
+#taskFooter {
+    padding: 15px 0px;
+    text-align: center;
+    width: 79.8%;
+    margin: 0px auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 30% 20% 20% 20%;
+    column-gap: 1%;
+    background-color: var(--main-color-light);
+    color: black;
+    font-size: 100%;
+}
+
+#taskFooter * {
+    display: inline-block;
+    padding: 1%;
+}
+
+.selected {
+    border: 1px solid red;
 }
 
 .completed {
     text-decoration: line-through;
-    opacity: 0.5;
 }
 
-/*CUSTOM SELECTOR */
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0 !important;
-    background-image: none;
+.activeFilter {
+    border: 1px solid orange;
+    border-radius: 5px;
 }
 
-/* Custom Select */
-.select {
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-}
+@media only screen and (max-width: 768px) {
+    #newTask {
+        width: 65%;
+    }
 
-select {
-    color: #E06666;
-    cursor: pointer;
-    width: 12rem;
-}
-
-/* Arrow */
-.select::after {
-    content: "\25BC";
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    background: #E06666;
-    cursor: pointer;
-    pointer-events: none;
+    #addButton {
+        width: 1em;
+        padding: 0;
+        padding-top: 0px;
+        text-align: center;
+        align-items: center;
+    }
 }
