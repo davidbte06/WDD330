@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Week 7</title>
+    <meta name="description" content="~Notes for week 7">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Week 7: Questions, Notes, Exercise</h1>
+    </head>
+
+    <main>
+        <h2>Questions</h2>
+        <ul>
+            <li>Where can I find good examples of AJAX usage?</li>
+        </ul>
+
+        <h2>Notes</h2>
+        <h3>Chapter 11: Further Functions</h3>
+
+        <p>They can be passed around in the same way as every other value (first-class objects), they have their own
+            methods and properties and they can accept other functions as parameters</p>
+
+        <li>(length): returns the number of parameters the function has</li>
+        <p>call (): we can use it to set the value of this indise a function as the first arguemnet</p>
+        <li>function sayHello(){ return 'Hello, my name is ${ this.name }; }'</li>
+        <li>We can add our own properties to functions like the same way we do with other objects in JavaScript</li>
+        <p>Immediately Invoked Function Expression (IIFE): an anonymous function that is inoked as soon as it's defined
+        </p>
+        <li>(function(){ conts temp = 'World; console.log('Hello ${temp}'); })();</li>
+        <li>A function can also define itself and even redefine itself, we can do this by using an anonymous function
+            with the same name as the function</li>
+        <p>Recursive Functions: is a technique used to solve computer problems by creating a function that calls itself
+            until your program achieves the desired result</p>
+
+        <h3>Chapter 13: AJAX</h3>
+        <li>Ajax: Asynchronous JavaScript And XML</li>
+        <p> It is not a programming language per se, but a new technique that combines several programming languages
+        </p>
+        <p>The advantage of ajax over other web programming languages is asynchrony</p>
+        <li>fetch (): is the URL of the resource you wish to fetch</li>
+        <li>The redirect() method can be used to redirect to another URL</li>
+        <p>Request Interference</p>
+        <li>url</li>
+        <li>method</li>
+        <li>headers</li>
+        <li>mode</li>
+        <li>cache</li>
+        <li>credentials</li>
+        <li>redirect</li>
+
+        <p>We can also update a web page using Ajax</p>
+        <p>FormData makes much easier to submit information in forms using Ajax</p>
+        <li>const data = new FormData(); </li>
+
+
+    </main>
+
+</body>
+
+</html>

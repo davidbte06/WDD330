@@ -1,0 +1,26 @@
+body {
+    background-color: #e7ecef;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+h1 {
+    background-color: #274c77;
+    color: #ffffff;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+a {
+    color: #274c77;
+    text-decoration: none;
+}
+
+ul {
+    text-decoration: none;
+}
