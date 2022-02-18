@@ -24,45 +24,67 @@
         </ul>
 
         <h2>Notes</h2>
-        <li>Programming is about making computers do what you want. A computer program is basically a series of
-            instructions that tell your computer how to perform a task</li>
-        <li>HTML5 is the latest HTML specification, though it’s actually more of an umbrella term for all the latest
-            technologies that are used on the web. This includes HTML, CSS3 and lots of APIs that use JavaScript to
-            interact with web pages.</li>
-        <li>// short comment</li>
-        <li>/* */ long comment</li>
-        <li>Variables are used in programming languages to refer to a value stored in memory.</li>
-        <li>A string is a collection of characters, such as letters and symbols. We can create a string literal by
-            writing a group of characters inside quote marks like this: 'hello'</li>
-        <li>Symbols were introduced as a new primitive value in ES6. They can be used to create unique values, which
-            helps to avoid any naming collisions.</li>
-        <li>Null means 'no value'. It can be thought of as a placeholder that JavaScript uses to say "there should be a
-            value here, but there isn’t at the moment."</li>
-        <li>There are two Boolean values: FALSE, TRUE</li>
-        <li>Logical operators: !, &&, ||</li>
-        <li>Arrays: An array is an ordered list of values.</li>
-        <li>pop() : removes last item
-        <li>shift() : removes first item</li>
-        <li>push() : adds to end</li>
-        <li>upshift() : add to beginning</li>
-        <li>Loops: Loops will repeat a piece of code over and over again according to certain conditions.</li>
-        <li>for (init; condition; after) {}</li>
-        <li>for (const item of items) {}</li>
-        <li>for (const key of items.keys()) {}</li>
-        <li>for (const value of items.values()) {}</li>
-        <li>for (const [key,value] of items.entries()) {}</li>
-        <li>Function: A function is a chunk of code that can be referenced by a name, and is almost like a small,
-            self-contained mini program. Functions can help reduce repetition and make code easier to follow.</li>
-        <li>function hello() {
-            console.log('Hello World'); }
-        </li>
-        <li>A function can also be declared using the constructor Function().</li>
-        <li>Return Values: All functions return a value, which can be specified using the return statement, which comes
-            after the return keyword. A function that doesn’t explicitly return anything (such as all the examples we
-            have seen so far) will return undefined by default.</li>
-        <li>Parameters and arguments are terms that are often used interchangeably to represent values provided for the
-            function as an input. There is a subtle difference though: any parameters a function needs are set when the
-            function is defined. When a function is invoked, it is provided with arguments.</li>
+        <h3>Chapter 2: Programming basics</h3>
+        <p>We can use comments in our code, this is ignored by the lenguage</p>
+        <p>Comments are very important and it makes it easier for anybody reading our code to understand what's going on
+        </p>
+        <li> // this is a short comment</li>
+        <li> /* This a a longer comment anything here will be ignored */</li>
+
+        <p>Variables are used in programming a lot and we use it to refer a value stored in memory</p>
+        <li>const: will not be reassigned to another value</li>
+        <li>let: we use it if the variable might be reassigned later in the program</li>
+
+        <p>Strings: a string is a collection of characters such as letters and symbols and we can create a string by
+            writing inside quote marks</p>
+        <li>'hello'</li>
+        <p>We use symbols to create unique values and avoid any naming collisions ( Symbol() )</p>
+        <p>Numbers: this can be integers (5) or floating point numbers (3.1415) </p>
+        <p>Null: this means that there is no defined value yet</p>
+        <p>Booleans: There are just two Booleans values true and false</p>
+        <p>Logical Operators: are used to combine two Boolean values and return a true, false or null result</p>
+        <li>! (Logical NOT)</li>
+        <li>&& (Logical AND)</li>
+        <li>|| (Logical OR)</li>
+
+
+        <h3>Chapter 3: Arrays, Logic, and Loops</h3>
+
+        <p>An array is an ordered list of values if we wan to create an array we need to write a pair of square brackets
+        </p>
+        <li>conts myArray = [];</li>
+        <p>Sets: a collections of unique values, cannot include any duplicate values</p>
+        <li>const list = new Set();</li>
+        <li>We can add values into a set using the add method</li>
+        <li>We can use the size() method so we can find the number of values in a set</li>
+        <li>delete() remove a value from a set</li>
+        <li>We can convert a set to an array by placing the set inside an array literal</li>
+        <p>Maps: it is a data structure and is a convenient way of keeping a list of key and value pairs</p>
+        <li>const romanNumerals = new Map();</li>
+        <p>if statements</p>
+        <li>if (condition) { // code to run if condition is true }</li>
+        <p>else statements</p>
+        <li>if (condition) { // code to run if condition is true } else { //code to run if condition is false }</li>
+        <li>We can string lots of if and else statements together to make a logical decision tree</li>
+        <p>While Loops</p>
+        <li>while (condition) { // do something }</li>
+        <p>do...while Loops</p>
+        <li>do { do something } while(condition)</li>
+        <p>For Loops</p>
+        <li>for (initialization ; condition ; after) { do something }</li>
+
+
+        <h3>Chapter 4: Functions</h3>
+        <p>A function is a reusable piece of code that can be called at any time from our program</p>
+        <p>This avoids the need to write the same code over and over again. This will help us to write modular code in
+            JavaScript.</p>
+        <li>function hello(){ console.log('Hello World!'); }</li>
+        <p>Invoking a function is to run the code inside the function´s body</p>
+        <li>hello();</li>
+        <p>All functions return a value and we can use it return for this</p>
+        <li>Parameters: local variables to which a value is assigned before starting the execution of the body of a
+            function</li>
+        <li>Arguments: are the values that are passed to the function when it is invoked.</li>
     </main>
 </body>
 
