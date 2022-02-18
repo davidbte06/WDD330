@@ -21,6 +21,10 @@ const array = [{
     {
         label: 'Todo App',
         link: 'todo-app/index.html'
+    },
+    {
+        label: 'Week 7 Notes',
+        link: 'week7/index.html'
     }
 
 ];
