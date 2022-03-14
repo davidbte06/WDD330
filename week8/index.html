@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Week 8</title>
+    <meta name="description" content="~Notes for week 8">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Week 8: Questions, Notes, Exercise</h1>
+    </head>
+
+    <main>
+        <h2>Questions</h2>
+        <ul>
+            <li>What other drag and drop options are there?</li>
+        </ul>
+
+        <h2>Notes</h2>
+        <h3>Chapter 8: Transforms and Transitions</h3>
+        <p>We can translate, rotate, scale and skew any element on the page by using (transform) and CSS3 property. We
+            can manipulate an element's appearance using transform functions.</p>
+        <p>With the transform fuctions we can move element left, right, up or down. Similar to the behavior (position:
+            relative;)</p>
+        <p>(translate (x,y) moves an element x from the left and y from the top)</p>
+        <li>transform: translate (45px, -45px); </li>
+        <li>translatex or translatey to move and element vertically or horizontally</li>
+        <li>Transform don't work on inline elements</li>
+
+        <p>Scaling: (scale (x,y)) a function that scales and element by the defined factor horizontally then vertically
+        </p>
+        <li>scaleX(x) or scaleY(y) will scale only the horizontal dimensions or only the vertical dimensions
+            respectively</li>
+
+        <p>Rotation: rotate() this functions rotates an element around the point of origin by a specified angle value
+        </p>
+        <li>.ad-ad2 h1:hover span {
+            color: #484848;
+            transform: rotate(10deg) translateX(40px) scale(1.5);
+            }
+        </li>
+
+        <p>Skew: skew (x,y) whit this function we can specifie a skew along the x and y exes</p>
+        <li>transform: skew(15deg, 4deg);</li>
+
+        <p>Transitions: allow the values of CSS properties to change over time, essentially providing simple animations
+        </p>
+        <li>transition-duration: sets how long the transition will take</li>
+        <li>transition-duration: 0.2s;</li>
+        <li>transition-timing-function: control the pace of the transition in even more granular detail</li>
+        <li>Most common timming functions: ease, linear, ease-in, ease-out or ease-in-out</li>
+        <li>transition delay: we can introduce a delay before the transitio begins</li>
+
+        <p>Animations: this will help us to control each step of an animation via keyframes</p>
+
+        <h3>Chapter 12: Canvas, SVG, and Drag and Drop</h3>
+        <p>Thanks to Canvas API we can draw anything we can imagine, all through JavaScript</p>
+        <li>The first step to use canvas is to add (canvas) element to the page</li>
+        <li>We need to set the width and height here and not in the CSS</li>
+
+        <p>SVG: (Scalable Vector Graphics) file format that allows us to describe vector graphics using XML</p>
+        <li>XML stands for eXtensible Markup Language it's a markup metalanguage</li>
+        <li>To draw we can use (svg)</li>
+        <li>We can use filters and svg to make it black and white</li>
+
+        <p>Drag on Drop: this API allows us to specify that certain elements are draggable, and then specify what should
+            happen when these draggable elements are dragged over or dropped onto other elements on the page</p>
+    </main>
+
+</body>
+
+</html>

@@ -25,6 +25,10 @@ const array = [{
     {
         label: 'Week 7 Notes',
         link: 'week7/index.html'
+    },
+    {
+        label: 'Week 8 Notes',
+        link: 'week8/index.html'
     }
 
 ];
