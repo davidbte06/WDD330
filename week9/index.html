@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Week 8</title>
+    <meta name="description" content="~Notes for week 9">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Week 9: Questions, Notes, Exercise</h1>
+    </head>
+
+    <main>
+        <h2>Questions</h2>
+        <ul>
+            <li>Are there any useful APIs not listed here that you would recommend?</li>
+        </ul>
+
+        <h2>Notes</h2>
+        <h3>Chapter 9: The Window Object</h3>
+        <p>Browser Object Model (BOM) is a collection of properties and methods and contain information about the
+            browser and computer screen</p>
+        <p>In general, you should refer to global variables without using the window object; it’s less typing and your
+            code will be more portable between environments. An exception is if you need to check whether a global
+            variable has been defined</p>
+        <li>Global variables are created without using the const, let or var keywords</li>
+        <li>Most browsers allow users to disable any dialogs from repeatedly appering, meaning they are not a feature to
+            be relied upon</li>
+        <li>window.location.href: return full URL</li>
+        <p>With window.history we can access information about any previously visited pages in the current browser
+            session</p>
+        <li>window.history.length : shows how many pages have been visited before arriving at the current page</li>
+        <li>window.open() : we can open a new window</li>
+        <li>window.screen: information about the screen the browser is displayed on, if we use (height) and (width) we
+            can know the height and width of the screen in pixels</li>
+        <p>Each window object contains a document object. The document object contains a few other methods that are
+            worth looking at</p>
+        <li>write(): simply writes a string of text to the page</li>
+        <p>A cookie is a small piece of text that the websites you visit send to your browser. Cookies allow sites to
+            remember information about your visit, which can make sites easier to revisit and more useful to you</p>
+        <li>To create a cookie we need to assign it to JavaScript's, using the document.cookie</li>
+        <li>document.cookie = 'name=Superman'</li>
+        <p>Timing functions: setTimeout(), setInterval()</p>
+
+        <h3>Chapter 14: HTML5 APIs</h3>
+        <p>HTML5 is the lastest version of the Hypertext Markup Language used to creat web pages</p>
+        <li>data: this is a way of embedding data in a web page and we use custom attributes that are ignored by the
+            browser</li>
+        <p>We can decide these attributes but we need to follow some rules</p>
+        <li>Star with data</li>
+        <li>Contain only lowercase letters, numbers, hyphens, dots, colons or underscores</li>
+        <li>Include an optional string value</li>
+        <p>APIs that are popular and supported in most moder browsers</p>
+        <li>HTML 5 Web Storage</li>
+        <li>Geolocation</li>
+
+        <p>The list of APIs is constantly growing, and includes APIs for accessing a device’s camera, uploading files,
+            accessing the battery status, handling push notifications, building drag-and-drop functionality, creating 3D
+            effects with WebGL, and many more! A comprehensive list of HTML5 APIs can be found at the Mozilla Developer
+            Network</p>
+    </main>
+
+</body>
+
+</html>
