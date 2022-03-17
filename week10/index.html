@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Week 10</title>
+    <meta name="description" content="~Notes for week 10">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Week 10: Questions, Notes, Exercise</h1>
+    </head>
+
+    <main>
+        <h2>Questions</h2>
+        <ul>
+            <li>Is it more advisable to use PHP or JS for server-side validation, since JS can be disabled?</li>
+        </ul>
+
+        <h2>Notes</h2>
+        <h3>MDN: Validating Forms</h3>
+        <p>It is important that all required form controls are filled out in the correct format, this is called client-side form validation</p>
+        <li>Your apps should always perform security checks on any form-submitted data on the server-side as well as the client-side</li>
+        <li>For good user experience, indicate to the user when form fields are required. It isn't only good user experience, it is required by WCAG accessibility guidelines. Also, only require users to input data you actually need: For example, why do you really need to know someone's gender or title?</li>
+        <p>Constraint Validation API</p>
+        <li>HTMLButtonElement</li>
+        <li>HTMLFieldSetElement</li>
+        <li>HTMLInputElement</li>
+        <li>HTMLOutputElement</li>
+        <li>HTMLSelectElement</li>
+        <li>HTMLTextAreaElement</li>
+        <p>The constraint validation API enables checki9ng values that users have entered into form controls, before submitting the values to the server</p>
+        <li>We can also implement a customized error massage</li>
+        <li>Customizing these error massages is one of the most common use cases of the constraint validation API</li>
+        <li>In some cases we won't be able to use the constraint validation API, and we need to do it in JavaScript</li>
+        <h3>MDN: Using Fetch</h3>
+        <p>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline</p>
+        <li>fetch(): method that provides an easy, logical way to fetch resources asynchronously across the newtwork</li>
+        <li>fetch() won't reject on HTTP error status even if the response is an HTTP 404 or 500</li>
+        <li>fetch() won't send cross-origin cookies unless your set the credentials init option</li>
+        <p>fetch() we can add a second parameter and init object that allow us to control a number of different settings</p>
+
+</body>
+
+</html>
