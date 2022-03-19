@@ -30,7 +30,14 @@ const array = [{
         label: 'Week 8 Notes',
         link: 'week8/index.html'
     },
-    
+    {
+        label: 'Week 9 Notes',
+        link: 'week9/index.html'
+    },
+    {
+        label: 'Week 10 Notes',
+        link: 'week10/index.html'
+    }
 
 ];
 
