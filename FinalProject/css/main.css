@@ -348,3 +348,57 @@ footer {
     background-color: var(--secondary-color);
     color: var(--black);
 }
+
+/* CONTACT*/
+.form {
+    background-color: var(--white);
+}
+.contact-us {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.personal-info-contact {
+    margin-bottom: 50px;
+}
+
+form legend {
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+}
+
+form fieldset {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.box,
+fieldset div {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.box input,
+textarea,
+select {
+  display: block;
+  border: 1px solid var(--black);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Thanks page */
+.thanks-message {
+    align-self: center;
+    border: 1px solid var(--black);
+    border-radius: 0.3rem;
+    padding: 50px;
+  }

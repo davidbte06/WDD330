@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Moviepedia</title>
+        <meta name="description" content="Final Project">
+    </head>
+
+<body class="form">
+    <nav class="navigation">
+        <button onclick="toggleMenu()"> &#9776; Menu</button>
+        <ul id="menu" class="main_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Sign Up</a></li>
+        </ul>
+    </nav>
+    <main class="contact-us">
+
+        <form action="thanks.html" method="get">
+            <h2>Sign Up</h2>
+            <fieldset class="personal-info-contact">
+                <legend>Personal Information</legend>
+                <label class="box">First Name*<input type="text" name="first-name" pattern="[A-Za-z].{2,}"
+                        required /></label>
+                <label class="box">Last Name*<input type="text" name="last-name" pattern="[A-Za-z].{2,}"
+                        required /></label>
+                <label class="box">Email*<input type="email" name="email" placeholder="davidbte@gmail.com"
+                        required /></label>
+                <label class="box">Phone<input type="tel" name="phone" /></label>
+                <label class="box">Comments
+                    <textarea name="comments" cols="30" rows="10"></textarea>
+                </label>
+            </fieldset>
+            <div id="button">
+                <input type="submit" value="Sign Up" id="submit" />
+            </div>
+        </form>
+
+        </div>
+
+    </main>
+    <footer>
+        <p class="footer-information">&copy; <span id="copyrightyear"></span> MoviePedia | David Burguete |
+            Mexico</p>
+        <p class="updated"><span id="lastupdated"></span></p>
+        <p>Days since lastt visit: <span id="last-visited"></span></p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
